@@ -25,19 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The game's purpose is to guess the secret number. The user is given limited attempts and has the option of enabling hints.
+- The bugs I found were that if the guess was higher than the secret number, the hint shown would be "Go HIGHER!" and if the guess was lower than the secret number, the hint shown was "Go LOWER!"
+- I switched the messages shown, refactored check_guess to logic_utils, and added test cases to verify the updated the code.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. A secret number is generated (40)
+2. User enters a guess of 20
+3. Game returns "Go HIGHER!"
+4. User enters a guess of 70 -> "Go LOWER!"
+5. Score updates after each guess
+6. Game ends after the correct guess
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

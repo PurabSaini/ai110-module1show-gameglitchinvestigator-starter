@@ -41,11 +41,14 @@ One AI suggestion that was misleading was that it said I could run the tests by 
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
 
+I decided a bug was fixed when the code passed the tests and when the code gave the expected outputs for a variety of guesses. I also manually tested the game by entering numbers that were higher and lower than the secret number. It showed that the code was now giving the correct hints. AI did also help me design the tests by considering the cases where the secret number is considered string. 
 ---
 
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
+I would tell them that "reruns" run the entire Python script every time a user interacts with the webpage. This can lead to problems since all variables are reset as well. Session state fixes this problem because anything stored in session state survives reruns.
 
 ---
 
@@ -55,3 +58,5 @@ One AI suggestion that was misleading was that it said I could run the tests by 
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One strategy I would want to reuse is using AI to help write/design test cases. One thing I would do differently when working with AI is putting more time to identify bugs so that I can give a specific/precise description of the bugs to AI when debugging. Overall, this project changed the way I think about AI generated code by showing me that I have the final say on any changes and its up to me to ensure correctness.

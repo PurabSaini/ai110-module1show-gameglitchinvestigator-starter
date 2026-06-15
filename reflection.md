@@ -12,11 +12,11 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 Document at least 3 bugs you found. Add rows as needed.
 
-| Input | Expected Behavior | Actual Behavior | Console Output / Error |
-|-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Input       | Expected Behavior      | Actual Behavior                                     | Console Output / Error |
+| ----------- | ---------------------- | --------------------------------------------------- | ---------------------- |
+| Guess of 5  | Input added to history | Input only added when Submit Guess is clicked twice | None                   |
+| Guess of 20 | Too High hint          | Too low hint shown                                  | None                   |
+| Guess of 25 | Go lower               | Go higher shown                                     | None                   |
 
 ---
 
@@ -26,6 +26,12 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+I used Claude Code for this project
+
+One AI suggestion that was correct was that the hint's were in the wrong
+cases. For example if the guess was higher than the secret, the hint provided was to "Go HIGHER!" instead of "Go LOWER!" I verified this by reviewing the code Claude found the bug in. 
+
+One AI suggestion that was misleading was that it said I could run the tests by using pytest, however I specifically needed to use python -m since I could not import check_guess from logic_utils by just using pytest. 
 ---
 
 ## 3. Debugging and testing your fixes
